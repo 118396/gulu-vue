@@ -10,6 +10,8 @@ import Header from './header'
 import Sider from './sider'
 import Content from './content'
 import Footer from './footer'
+import Toast from './toast'
+import plugin from './plugin'
 
 
 Vue.component('g-button', Button)
@@ -23,6 +25,8 @@ Vue.component('g-header', Header)
 Vue.component('g-content', Content)
 Vue.component('g-footer', Footer)
 Vue.component('g-sider', Sider)
+Vue.component('g-toast', Toast)
+Vue.use(plugin)
 
 
 new Vue({
@@ -34,9 +38,32 @@ new Vue({
         message: 'hi'
     },
     created() {},
+
     methods: {
         inputChange(e) {
             console.log(e)
+        },
+        showToast1() {
+            this.showToast('top')
+        },
+        showToast2() {
+            this.showToast('middle')
+        },
+        showToast3() {
+            this.showToast('bottom')
+        },
+        showToast(position) {
+            this.$toast(`你的余额目前为 ${parseInt(Math.random() * 100)}。你的余额需要充值！`, {
+                position,
+                enableHtml: false,
+                closeButton: {
+                    text: '已充值',
+                    callback() {
+                        console.log('他说已经充值余额了')
+                    }
+                },
+                autoClose: 3,
+            })
         }
     }
 })
