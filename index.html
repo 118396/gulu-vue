@@ -38,10 +38,39 @@
             margin: 20px;
         }
     </style>
+    <style>
+        .demo {
+            background: #ddd;
+            border: 1px solid #666;
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
+
     <div id="app">
+        <g-row>
+            <g-col span="24" :narrow-pc="{span:8}">
+                <div class="demo"></div>
+            </g-col>
+            <g-col span="24" :narrow-pc="{span:8}">
+                <div class="demo"></div>
+            </g-col>
+            <g-col span="24" :narrow-pc="{span:8}">
+                <div class="demo"></div>
+            </g-col>
+            <g-col span="24" :narrow-pc="{span:8}">
+                <div class="demo"></div>
+            </g-col>
+            <g-col span="24" :narrow-pc="{span:8}">
+                <div class="demo"></div>
+            </g-col>
+            <g-col span="24" :narrow-pc="{span:8}">
+                <div class="demo"></div>
+            </g-col>
+        </g-row>
+
         <!-- <div class="box">
             <g-input value="张三" disabled></g-input>
             <g-input value="李四" readonly></g-input>
@@ -50,8 +79,8 @@
         <!-- <div class="box">
             <g-input value="赵" error="姓名不能少于两个字"></g-input>
         </div> -->
-        <div class="box">
-            <g-input  v-model='message'></g-input>
+        <!-- <div class="box">
+            <g-input v-model='message'></g-input>
             <p>{{message}}</p>
             <button @click="message += 2">+2</button>
         </div>
@@ -70,8 +99,7 @@
                 <g-button>更多</g-button>
                 <g-button icon="right" icon-position="right">下一页</g-button>
             </g-button-group>
-        </div>
-
+        </div> -->
     </div>
     <script src="./src/app.js"></script>
     <!-- <script src="//at.alicdn.com/t/font_1167356_2p3fceei7rw.js"></script> -->
