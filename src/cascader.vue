@@ -20,24 +20,6 @@ export default {
   data() {
     return {
       popovervisible: false,
-      level1Selected: null,
-      level2Selected: null
-    };
-  },
-  computed: {
-    level2Items() {
-      if (this.level1Selected) {
-        return this.level1Selected.children;
-      } else {
-        return [];
-      }
-    },
-    level3Items() {
-      if (this.level2Selected) {
-        return this.level2Selected.children;
-      } else {
-        return [];
-      }
     }
   }
 };
