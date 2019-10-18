@@ -33,14 +33,17 @@
             font-size: var(--font-size);
         }
     </style>
-
+    <style>
+        .xxx {height:200px;}
+    </style>
 </head>
 
 <body>
 
     <div id="app" style="padding: 100px;">
-        <g-cascader :source="source"></g-cascader>
-
+        <p>1111</p>
+        <g-cascader :source="source"  popover-height="200px"></g-cascader>
+        <p>2222</p>
 
         <!-- <g-collapse :selected.sync="selectedTab">
             <g-collapse-item title="标题1" name="1">内容1</g-collapse-item>
