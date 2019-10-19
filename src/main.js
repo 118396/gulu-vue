@@ -1,4 +1,16 @@
-import Vue from 'vue'
+import Vue from "vue";
+import Demo from "./demo.vue";
+
+Vue.config.productionTip = false;
+
+new Vue({
+  render: h => h(Demo)
+}).$mount("#app");
+
+
+
+
+/* import Vue from 'vue'
 import Button from './button'
 import Icon from './icon'
 import ButtonGroup from './button-group'
@@ -148,4 +160,4 @@ new Vue({
         //     })
         // }
     }
-})
+}) */
