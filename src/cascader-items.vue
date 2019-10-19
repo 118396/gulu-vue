@@ -1,5 +1,5 @@
 <template>
-  <div class="cascaderItem " :style="{height:height}">
+  <div class="cascaderItem " :style="{ height: height }">
     <div class="left">
       <div class="label" v-for="item in items" @click="onClickLabel(item)">
         {{ item.name }}
@@ -11,7 +11,7 @@
         :items="rightItems"
         :height="height"
         :level="level + 1"
-        :selected="selected" 
+        :selected="selected"
         @update:selected="onUpdateSelected"
       ></gulu-cascader-items>
     </div>
@@ -43,7 +43,7 @@ export default {
   },
   computed: {
     rightItems() {
-      let currentSelected = this.selected[this.level]
+      let currentSelected = this.selected[this.level];
       if (currentSelected && currentSelected.children) {
         return currentSelected.children;
       } else {
@@ -58,12 +58,12 @@ export default {
     onClickLabel(item) {
       let copy = JSON.parse(JSON.stringify(this.selected));
       copy[this.level] = item;
-      // copy.splice(this.level + 1) // 一句话
+      copy.splice(this.level + 1) 
       this.$emit("update:selected", copy);
-      console.log(this.selected[this.level])
+      console.log(this.selected[this.level]);
     },
-    onUpdateSelected (newSelected) {
-      this.$emit('update:selected', newSelected)
+    onUpdateSelected(newSelected) {
+      this.$emit("update:selected", newSelected);
     }
   }
 };
