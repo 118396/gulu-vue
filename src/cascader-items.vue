@@ -77,8 +77,9 @@ export default {
   justify-content: flex-start;
   height: 100px;
   .left {
-    height: 100%;
-    padding: 0.3em 0;
+      height: 100%;
+      padding: .3em 0;
+      overflow: auto;
   }
   .right {
     height: 100%;

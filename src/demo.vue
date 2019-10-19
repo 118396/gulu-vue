@@ -7,17 +7,22 @@
       <g-cascader
         :source="source"
         popover-height="200px"
-        :selected="selected"
-        @update:selected="selected = $event"
+        :selected.sync="selected"
       ></g-cascader>
     </div>
-
-    <p>2222</p>
   </div>
 </template>
 <script>
 import Button from "./button";
 import Cascader from "./cascader";
+import db from "./db";
+
+function ajax(parentId = 0) {
+  return db.filter(item => item.parent_id == parentId);
+}
+
+console.log(ajax());
+
 export default {
   name: "demo",
   components: {
@@ -27,46 +32,7 @@ export default {
   data() {
     return {
       selected: [],
-      source: [
-        {
-          name: "湖北",
-          children: [
-            {
-              name: "武汉",
-              children: [{ name: "武昌" }, { name: "汉口" }, { name: "汉阳" }]
-            },
-            {
-              name: "宜昌",
-              children: [
-                { name: "夷陵 " },
-                { name: "点军 " },
-                { name: "西陵 " }
-              ]
-            }
-          ]
-        },
-        {
-          name: "湖南",
-          children: [
-            {
-              name: "长沙",
-              children: [
-                { name: "岳麓 " },
-                { name: "天心 " },
-                { name: "芙蓉 " }
-              ]
-            },
-            {
-              name: "株洲",
-              children: [
-                { name: "天元 " },
-                { name: "芦淞 " },
-                { name: "荷塘 " }
-              ]
-            }
-          ]
-        }
-      ]
+      source: ajax()
     };
   }
 };
