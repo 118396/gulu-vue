@@ -12,7 +12,7 @@
       <g-slides-item name="2">
         <div class="box">2</div>
       </g-slides-item>
-      <g-slides-item name="3"
+      <g-slides-item name="3">
         <div class="box">3</div>
       </g-slides-item>
     </g-slides>

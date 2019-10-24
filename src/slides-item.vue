@@ -1,13 +1,23 @@
 <template>
-  <transition name="slide">
-    <div class="g-slides-item" v-if="visible" :class="{ reverse }">
-      <slot></slot>
-    </div>
-  </transition>
+  <div>
+    <template v-if="animationEnabled">
+      <transition name="slide">
+        <div class="g-slides-item" v-if="visible" :class="{ reverse }">
+          <slot></slot>
+        </div>
+      </transition>
+    </template>
+    <template v-else>
+      <div class="g-slides-item" v-if="visible" :class="{ reverse }">
+        <slot></slot>
+      </div>
+    </template>
+  </div>
 </template>
 
- <script>
+<script>
 export default {
+  name: "GuluSlidesItem",
   props: {
     name: {
       type: String,
@@ -17,22 +27,23 @@ export default {
   data() {
     return {
       selected: undefined,
-      reverse: false
+      reverse: false,
+      animationEnabled: false
     };
+  },
+  updated() {
+    this.animationEnabled = true;
   },
   computed: {
     visible() {
-      console.log(`我的name是${this.name}`);
-      console.log(`我的方向是${this.reverse ? "反向" : "正向"}`);
       return this.selected === this.name;
     }
   }
 };
 </script>
 
- <style lang="scss" scoped>
-.g-slides-item {
-}
+<style lang="scss" scoped>
+
 .slide-leave-active {
   position: absolute;
   left: 0;
@@ -42,22 +53,18 @@ export default {
 }
 .slide-enter-active,
 .slide-leave-active {
-  transition: all 3s;
+  transition: all 0.5s;
 }
 .slide-enter {
   transform: translateX(100%);
-  opacity: 0;
 }
 .slide-enter.reverse {
   transform: translateX(-100%);
-  opacity: 0;
 }
 .slide-leave-to {
-  transform: translateX(-100%) scale(0.5);
-  opacity: 0;
+  transform: translateX(-100%);
 }
 .slide-leave-to.reverse {
-  transform: translateX(100%) scale(0.5);
-  opacity: 0;
+  transform: translateX(100%);
 }
-</style> 
+</style>
