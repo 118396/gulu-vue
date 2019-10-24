@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <g-slides
       class="wrapper"
       width="300px"
@@ -16,24 +16,24 @@
         <div class="box">3</div>
       </g-slides-item>
     </g-slides>
-  </div>
+  </div> -->
 </template>
 <script>
-import GSlides from "./slides";
-import GSlidesItem from "./slides-item";
-export default {
-  name: "demo",
-  components: { GSlides, GSlidesItem },
-  data() {
-    return {
-      selected: undefined
-    };
-  },
-  created() {}
-};
+// import GSlides from "./slides";
+// import GSlidesItem from "./slides-item";
+// export default {
+//   name: "demo",
+//   components: { GSlides, GSlidesItem },
+//   data() {
+//     return {
+//       selected: undefined
+//     };
+//   },
+//   created() {}
+// };
 </script>
 <style>
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -49,5 +49,5 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-}
+} */
 </style>

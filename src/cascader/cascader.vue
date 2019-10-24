@@ -112,7 +112,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "var";
+@import "../../styles/var";
 .cascader {
   display: inline-block;
   position: relative;
