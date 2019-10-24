@@ -14,7 +14,7 @@
   </button>
 </template>
 <script>
-import Icon from "./icon";
+import Icon from "../icon";
 export default {
   components: {
     "g-icon": Icon
@@ -42,7 +42,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "var";
+@import "../var";
 @keyframes spin {
   0% {
     transform: rotate(0deg);
