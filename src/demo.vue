@@ -28,6 +28,7 @@
   import GNav from './nav/nav.vue'
   import GNavItem from './nav/nav-item.vue'
   import GSubNav from './nav/sub-nav.vue'
+  
   export default {
     name: "demo",
     components: {GNav, GNavItem, GSubNav},
