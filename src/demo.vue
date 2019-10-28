@@ -1,6 +1,6 @@
 <template>
   <div style="margin: 20px;">
-    <g-pager :total-page="20" :current-page.sync="currentPage"></g-pager>
+    <g-pager :total-page="10" :current-page.sync="currentPage"></g-pager>
   </div>
 </template>
 <script>
