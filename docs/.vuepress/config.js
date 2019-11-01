@@ -34,7 +34,8 @@ module.exports = {
                     '/components/grid',
                     '/components/layout',
                     '/components/toast',
-                    '/components/popover'
+                    '/components/popover',
+                    '/components/slides',
                 ]
             },
         ]
