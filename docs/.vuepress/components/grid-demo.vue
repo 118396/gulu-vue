@@ -1,25 +1,7 @@
----
-title: Grid
----
-# 网格
-
-## 引入 
-```bash
-import {Col, Row} from 'zebra-ui'
-```
-
-## 预览
-<ClientOnly>
-<grid-demo/> 
-</ClientOnly>
-
-## 代码
-<details style="margin-top: 32px;">
- <summary style=" outline: none">点击查看代码</summary> 
-
-```vue
-<!-- 24网格 -->
-  <g-row class="demoRow">
+<template>
+  <div style="padding-top: 16px;">
+    <h3>24网格</h3>
+    <g-row class="demoRow">
       <g-col span="8">
         <div class="demoCol">8</div>
       </g-col>
@@ -102,9 +84,9 @@ import {Col, Row} from 'zebra-ui'
         <div class="demoCol">2</div>
       </g-col>
     </g-row>
-
-    <!-- 设置 gutter -->
-    <g-row class="demoRow" gutter="10">
+    <div style="padding-top: 16px;">
+      <h3>设置 gutter</h3>
+      <g-row class="demoRow" gutter="10">
         <g-col span="8">
           <div class="demoCol">8</div>
         </g-col>
@@ -129,7 +111,9 @@ import {Col, Row} from 'zebra-ui'
           <div class="demoCol">6</div>
         </g-col>
       </g-row>
-      <!-- 设置空隙 -->
+    </div>
+    <div>
+      <h3>设置空隙</h3>
       <g-row class="demoRow" gutter="10">
         <g-col span="8">
           <div class="demoCol">8</div>
@@ -183,37 +167,29 @@ import {Col, Row} from 'zebra-ui'
           <div class="demoCol">2</div>
         </g-col>
       </g-row>
-```
-</details>
-
-# API
-
-<table>
-    <thead>
-      <th>参数</th>
-      <th>说明</th>
-      <th>类型</th>
-      <th>默认值</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>gutter</td>
-        <td>由 Row 接收，设置内部 Col 的 间隔</td>
-        <td>Number 或者类型为 String 的数字</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>span</td>
-        <td>由 Col 接收，设置一个 Col 占父元素的多少比例，取值为 0-24 的整数</td>
-        <td>Number 或者类型为 String 的数字</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>offset</td>
-        <td>由 Col 接收，设置该 Col 向右偏移的距离，取值为 0-24 的整数</td>
-        <td>Number 或者类型为 String 的数字</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-    </table>
-    
+    </div>
+  </div>
+</template>
+<style scoped>
+* {
+  box-sizing: border-box;
+}
+.demoRow {
+  margin: 10px 0;
+}
+.demoCol {
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+<script>
+import GRow from "../../../src/grid/row";
+import GCol from "../../../src/grid/col";
+export default {
+  components: { GRow, GCol }
+};
+</script>
