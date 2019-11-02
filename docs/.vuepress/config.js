@@ -37,6 +37,8 @@ module.exports = {
                     '/components/toast',
                     '/components/popover',
                     '/components/slides',
+                    '/components/collapse',
+                    '/components/cascader',
                 ]
             },
         ]
