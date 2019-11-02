@@ -40,6 +40,8 @@ module.exports = {
                     '/components/collapse',
                     '/components/cascader',
                     '/components/nav',
+                    '/components/pager',
+                    '/components/validate',
                 ]
             },
         ]
