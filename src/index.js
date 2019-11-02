@@ -22,14 +22,15 @@ export {default as TabsHead} from './tabs/tabs-head'
 export {default as TabsItem} from './tabs/tabs-item'
 export {default as TabsPane} from './tabs/tabs-pane'
 export {default as ClickOutside} from './click-outside'
-export {default as FormMixin} from './form-mixin'
 export {default as Icon} from './icon'
 export {default as Input} from './input'
 export {default as Pager} from './pager'
 export {default as Plugins} from './plugin'
 export {default as Popover} from './popover'
 export {default as Toast} from './toast'
-export {default as Validate} from './validate'
+export {default as FormMixin} from './validate/form-mixin'
+export {default as Validate} from './validate/validate'
+export {default as DemoFormRow} from './validate/demo-from-row'
 
 
 
