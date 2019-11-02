@@ -1,7 +1,7 @@
 module.exports = {
     base: '/gulu-vue/',
-    title: '轱辘UI',
-    description: '一个好用的UI框架',
+    title: 'Zebra UI',
+    description: '一套为开发者学习准备的基于 Vue 2.0 的组件库',
     themeConfig: {
         nav: [{
                 text: '主页',
@@ -13,7 +13,7 @@ module.exports = {
             },
             {
                 text: '交流',
-                link: 'https://google.com'
+                link: 'https://github.com/118396/gulu-vue'
             },
         ],
 
