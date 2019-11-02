@@ -4,7 +4,7 @@ title: Nav 导航栏
 # Nav
 ## 引入
 ```
-import {Nav，SubMenu, NavItem} from 'zebra-ui' 
+import {Nav，SubNav, NavItem} from 'zebra-ui' 
 ```
 ## 预览
 <ClientOnly>
