@@ -45,7 +45,7 @@ import {Nav，SubNav, NavItem} from 'zebra-ui'
         <g-nav-item name="hire">招聘</g-nav-item>
       </g-nav>
 
-      
+      <!-- 侧栏 -->
       <g-nav :selected.sync="selected" vertical style=" gidth: 200px;">
         <g-nav-item name="home">首页</g-nav-item>
         <g-sub-nav name="about">
@@ -87,19 +87,19 @@ import {Nav，SubNav, NavItem} from 'zebra-ui'
     <tbody>
       <tr>
         <td>selected</td>
-        <td> 传给 Menu，代表点击的那一项的 name，点击后赋值给 selected</td>
+        <td> 传给 Nav，代表点击的那一项的 name，点击后赋值给 selected</td>
         <td>String</td>
         <td>-</td>
       </tr>
       <tr>
         <td>name</td>
-        <td>传给 MenuItem 和 SubMenu，标识 MenuItem 和 SubMenu</td>
+        <td>传给 NavItem 和 SubNav，标识 NavItem 和 SubNav</td>
         <td>String</td>
         <td>必须填</td>
       </tr>
       <tr>
         <td>vertical</td>
-        <td>传给 Menu，开始垂直版本	</td>
+        <td>传给 Nav，开始垂直版本	</td>
         <td>Boolean</td>
         <td>false</td>
       </tr>

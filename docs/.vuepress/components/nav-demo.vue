@@ -30,7 +30,7 @@
       </g-nav>
     </div>
 
-    <div style="padding-top: 32px; width:200px ;">
+    <div style="padding-top: 36px; width:230px ;">
       <h3>侧栏</h3>
       <g-nav :selected.sync="selected" vertical style=" gidth: 200px;">
         <g-nav-item name="home">首页</g-nav-item>
