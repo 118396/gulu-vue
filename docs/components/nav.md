@@ -45,7 +45,7 @@ import {Nav，SubNav, NavItem} from 'zebra-ui'
         <g-nav-item name="hire">招聘</g-nav-item>
       </g-nav>
 
-      <!-- 侧栏 -->
+      
       <g-nav :selected.sync="selected" vertical style=" gidth: 200px;">
         <g-nav-item name="home">首页</g-nav-item>
         <g-sub-nav name="about">
