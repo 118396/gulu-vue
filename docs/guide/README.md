@@ -22,9 +22,8 @@ Zebra UI是一个不太一样的 UI 框架。
 
 ## 有哪些轮子
 
-* 简单轮子：按钮（Button）、输入框（Input）、网格（Grid）、布局(Layout)、提示（Toast）、标签页（Tabs）、弹出层（Popover）、折叠面板（Collapse）
-* 进阶轮子：级联选择（Cascader）、无缝轮播（Slides）、响应式导航条（Nav）、分页(Pager)、表单验证（Validate）、图片上传（Uploader）、粘滞组件（Sticky）
-* 高级轮子：滚动条（Scroll）、日期选择器（DatePicker）、表格（Table）
+* 简单轮子：按钮（Button）、输入框（Input）、网格（Grid）、布局(Layout)、提示（Toast）、标签页（Tabs）、弹出层（Popover）、折叠面板（Collapse）、图标（Icon）
+* 进阶轮子：级联选择（Cascader）、无缝轮播（Slides）、响应式导航条（Nav）、分页(Pager)、表单验证（Validate）、图片上传（Uploader）、表格（Table）
 
 ## 项目特点
 

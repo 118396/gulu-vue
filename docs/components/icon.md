@@ -1,7 +1,7 @@
 ---
-title: Icon
+title: Icon 图标
 ---
-# 按钮
+# 图标
 ## 引入
 ```
 import {Icon} from 'zebra-ui' 

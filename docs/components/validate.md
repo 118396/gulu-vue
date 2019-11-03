@@ -1,7 +1,7 @@
 ---
 title: Validate 表单验证
 ---
-# Validate
+# 表单验证
 
 ## 引入 
 ```bash

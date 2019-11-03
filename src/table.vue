@@ -1,7 +1,7 @@
 <template>
   <div class="gulu-table-wrapper" ref="wrapper">
     <div :style="{height, overflow: 'auto'}" ref="tableWrapper">
-      <table class="gulu-table" :class="{bordered, compact, striped: striped}" ref="table">
+      <table   class="gulu-table" :class="{bordered, compact, striped: striped}" ref="table">
         <thead>
         <tr>
           <th v-if="expendField" :style="{width: '50px'}" class="gulu-table-center"></th>
@@ -17,7 +17,7 @@
             </span>
             </div>
           </th>
-          <th  ref="actionsHeader" v-if="$scopedSlots.default"> 操作 </th>
+          <th  ref="actionsHeader" v-if="$scopedSlots.default">  </th>
         </tr>
         </thead>
         <tbody>
@@ -224,23 +224,23 @@
   @import "../styles/var";
   $grey: darken($grey, 10%);
   .gulu-table {
-    width: 100%;
+    // width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    border-bottom: 1px solid $grey;
-    &.bordered {
-      border: 1px solid $grey;
-      td, th {
-        border: 1px solid $grey;
-      }
-    }
+    // border-bottom: 1px solid $grey;
+    // &.bordered {
+    //   border: 1px solid $grey;
+    //   td, th {
+    //     border: 1px solid $grey;
+    //   }
+    // }
     &.compact {
       td, th {
         padding: 4px;
       }
     }
     td, th {
-      border-bottom: 1px solid $grey;
+      // border-bottom: 1px solid $grey;
       text-align: left;
       padding: 8px;
     }
@@ -266,7 +266,7 @@
         height: 10px;
         fill: $grey;
         &.active {
-          fill: red;
+          fill: gray;
         }
         &:first-child {
           position: relative;
@@ -284,7 +284,7 @@
     }
     &-wrapper {
       position: relative;
-      overflow: auto;
+    //   overflow: auto;
     }
     &-loading {
       background: rgba(255, 255, 255, 0.8);
