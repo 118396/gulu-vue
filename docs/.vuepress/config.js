@@ -43,6 +43,7 @@ module.exports = {
                     '/components/pager',
                     '/components/validate',
                     '/components/table',
+                    '/components/uploader',
                 ]
             },
         ]
