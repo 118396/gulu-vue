@@ -9,5 +9,5 @@ features:
   details: 享受 vue-cli 的开发体验，实践最流行的技术。
 - title: 自动化测试
   details: 采用 Karma + unit + Chai 做自动化测试，运行 yarn run test:unit 即可实时测试代码。
-footer: MIT Licensed | Copyright © 2019-present Echo
+footer: MIT Licensed | Copyright © 2019
 ---
