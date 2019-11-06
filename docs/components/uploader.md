@@ -1,11 +1,11 @@
 ---
-title: Uploader 文件上传
+title: Uploader 图片上传
 ---
-# 文件上传
+# 图片上传
 
 ## 引入 
 ```bash
-import {Uploader,http} from 'zebra-ui'
+import {Uploader} from 'zebra-ui'
 ```
 
 ## 预览

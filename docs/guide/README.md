@@ -11,7 +11,7 @@ Zebra UI是一个不太一样的 UI 框架。
 - 使用vue-test-utils写单元测试，由于时间有限后期会慢慢完成所有组件的单元测试代码
 - 使用了Travis CI 持续集成
 
-如果你对代码有疑问，欢迎[提issue](https://github.com/118396/gulu-vue)，我会回答你的疑问。
+如果你对代码有疑问，欢迎[提issue](https://github.com/118396/gulu-vue/issues)，我会回答你的疑问。
 
 也欢迎一起来造轮子
 
@@ -26,7 +26,7 @@ Zebra UI是一个不太一样的 UI 框架。
 ## 有哪些轮子
 
 * 简单轮子：按钮（Button）、输入框（Input）、网格（Grid）、布局(Layout)、提示（Toast）、标签页（Tabs）、弹出层（Popover）、折叠面板（Collapse）、图标（Icon）
-* 进阶轮子：级联选择（Cascader）、无缝轮播（Slides）、响应式导航条（Nav）、分页(Pager)、表单验证（Validate）、图片上传（Uploader）、表格（Table）
+* 进阶轮子：级联选择（Cascader）、轮播（Slides）、导航（Nav）、分页(Pager)、表单验证（Validate）、图片上传（Uploader）、表格（Table）
 
 ## 项目特点
 

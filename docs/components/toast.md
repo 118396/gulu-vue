@@ -5,7 +5,7 @@ title: Toast 提示
 
 ## 引入 
 ```bash
-import {Toast,Button} from 'zebra-ui'
+import {Toast} from 'zebra-ui'
 ```
 
 ## 预览

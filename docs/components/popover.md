@@ -5,7 +5,7 @@ title: Popover 弹出层
 
 ## 引入 
 ```bash
-import {Popover,Button} from 'zebra-ui'
+import {Popover} from 'zebra-ui'
 ```
 
 ## 预览

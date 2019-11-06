@@ -5,7 +5,7 @@ title: Table 表格
 
 ## 引入 
 ```bash
-import {Table,GTableColumn } from 'zebra-ui'
+import {Table,TableColumn } from 'zebra-ui'
 ```
 
 ## 预览
