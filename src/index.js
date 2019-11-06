@@ -30,7 +30,10 @@ export {default as Popover} from './popover'
 export {default as Toast} from './toast'
 export {default as FormMixin} from './validate/form-mixin'
 export {default as Validate} from './validate/validate'
-export {default as DemoFormRow} from './validate/demo-from-row'
+export {default as Uploader} from './uploader'
+export {default as Table} from './table'
+export {default as TableColumn} from './table-column'
+export {default as Http} from './http'
 
 
 
